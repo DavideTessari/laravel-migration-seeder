@@ -12,7 +12,7 @@ class TrainSeeder extends Seeder
     {
         $faker = Faker::create();
 
-        for ($i = 0; i < 50; $i++) {
+        for ($i = 0; $i < 50; $i++) {
             Train::create([
                 'azienda' => $faker->company,
                 'stazione_partenza' => $faker->city,
